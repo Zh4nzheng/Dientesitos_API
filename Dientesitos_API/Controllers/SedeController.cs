@@ -24,7 +24,7 @@ namespace Dientesitos_API.Controllers
             var obj = _sede.GetSede(id);
             if (obj == null)
             {
-                return NotFound("El producto(" + id.ToString() + ") no existe");
+                return NotFound("La Sede(" + id.ToString() + ") no existe");
             }
             else
             {

@@ -30,7 +30,7 @@ namespace Dientesitos_API.Service.CDoctor
         {
             var ObjDoctor = (from tdoc in conexion.Doctors
                              where tdoc.Iddoctor == id
-                             select tdoc).Single();
+                             select tdoc).FirstOrDefault();
             return ObjDoctor;
         }
 

@@ -29,7 +29,7 @@ namespace Dientesitos_API.Service.CSede
         {
             var ObjSede = (from tsed in conexion.Sedes
                              where tsed.Idsede == id
-                             select tsed).Single();
+                             select tsed).FirstOrDefault();
             return ObjSede;
         }
 

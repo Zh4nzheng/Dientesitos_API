@@ -30,7 +30,7 @@ namespace Dientesitos_API.Service.CCita
         {
             var ObjCita = (from tcit in conexion.CitaDentals
                             where tcit.Idcita == id
-                            select tcit).Single();
+                            select tcit).FirstOrDefault();
             return ObjCita;
         }
 

@@ -29,7 +29,7 @@ namespace Dientesitos_API.Service.CPaciente
         {
             var ObjPaciente=(from tpac in conexion.Pacientes
                              where tpac.Idpaciente ==id
-                             select tpac).Single();
+                             select tpac).FirstOrDefault();
             return ObjPaciente;
         }
 

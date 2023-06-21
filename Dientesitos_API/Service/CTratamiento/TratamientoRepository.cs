@@ -29,7 +29,7 @@ namespace Dientesitos_API.Service.CTratamiento
         {
             var ObjTratamiento = (from ttra in conexion.Tratamientos
                            where ttra.Idtratamiento == id
-                           select ttra).Single();
+                           select ttra).FirstOrDefault();
             return ObjTratamiento;
         }
 

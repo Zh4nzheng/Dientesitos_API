@@ -24,7 +24,7 @@ namespace Dientesitos_API.Controllers
             var obj = _doctor.GetDoctor(id);
             if (obj == null)
             {
-                return NotFound("El producto(" + id.ToString() + ") no existe");
+                return NotFound("El Doctor (" + id.ToString() + ") no existe");
             }
             else
             {

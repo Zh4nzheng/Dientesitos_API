@@ -26,7 +26,7 @@ namespace Dientesitos_API.Controllers
             var obj = _cita.GetCita(id);
             if (obj == null)
             {
-                return NotFound("El producto(" + id.ToString() + ") no existe");
+                return NotFound("La Cita Dental (" + id.ToString() + ") no existe");
             }
             else
             {
